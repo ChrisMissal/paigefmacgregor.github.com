@@ -24,7 +24,7 @@ var gun = new createObj("gun", 1);
 var baseballBat = new createObj("baseball bat", 3);
 var tireIron = new createObj("tire iron", 2);
 //creates array of noun objects using condensed notation
-var zombieNouns = new Array(zombie, hoard, walker, brains, apocalypse, flesh, katana, machete, dead, victim, tourniquet, survivor, wound, corpse, gun, baseballBat, tireIron);
+var zombieNouns = [ zombie, hoard, walker, brains, apocalypse, flesh, katana, machete, dead, victim, tourniquet, survivor, wound, corpse, gun, baseballBat, tireIron ];
 
 var ripping = new createObj("ripping", 2);
 var run = new createObj("run", 1);
