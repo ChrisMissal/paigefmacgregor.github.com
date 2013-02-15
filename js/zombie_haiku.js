@@ -115,13 +115,14 @@ var adjective2 = zombieAdj[Math.floor(Math.random()*zombieAdj.length)];
 var adjective3 = zombieAdj[Math.floor(Math.random()*zombieAdj.length)];
 
 //outlines the formula for haiku format1
-var format1 = new Object();
-    format1.haikuLine1 = art.word + " " + noun1.word + " " + verb1.word + ",";
-    format1.haikuLine2 = name1.word + " and " + adjective1.word + " " + verb2.word + ",";
-    format1.haikuLine3 = verb3.word + " " + adjective2.word + " " + noun2.word + ".";
-    format1.line1Syll = art.syllables + noun1.syllables + verb1.syllables;
-    format1.line2Syll = name1.syllables + 1 + adjective1.syllables + verb2.syllables;
-    format1.line3Syll = verb3.syllables + adjective2.syllables + noun2.syllables;
+var format1 = {
+    haikuLine1 : art.word + " " + noun1.word + " " + verb1.word + ",",
+    haikuLine2 : name1.word + " and " + adjective1.word + " " + verb2.word + ",",
+    haikuLine3 : verb3.word + " " + adjective2.word + " " + noun2.word + ".",
+    line1Syll : art.syllables + noun1.syllables + verb1.syllables,
+    line2Syll : name1.syllables + 1 + adjective1.syllables + verb2.syllables,
+    line3Syll : verb3.syllables + adjective2.syllables + noun2.syllables
+};
 
 //outlines the formula for haiku format2
 var format2 = new Object();
